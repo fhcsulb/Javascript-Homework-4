@@ -55,7 +55,7 @@ function displayPyriamid(input){
 
    for (let i in arr)
    {
-        let pyriamid_section = document.getElementById("pyriamid");
+      let pyriamid_section = document.getElementById("pyriamid");
       line = document.createElement("p");
       let stars = document.createTextNode(arr[i]);
       line.appendChild(stars);
