@@ -11,12 +11,14 @@ function validateNumber(input){
         console.log(false)
         document.getElementById("validity").innerHTML = `Your input ${input} was not valid. The valid input number is between 2 and 10. Please reload this page and try again`;
         document.getElementById("validity").style.color = "red";
+        return Boolean(false);
     }
 
     else
     {
         console.log(true);
         document.getElementById("validity").innerHTML = `The value ${input} you typed was valid`;
+        return Boolean(true);
     }
 }
 
@@ -34,9 +36,31 @@ function DivideMillionCount(input){
 
 function displayPyriamid(input){
     let N = input;
+    let arr = [];
     let i;
     let k;
     let line;
+
+    for(i = 0; i < N; i++)
+    {
+        string="";
+        for(k=i;k<N;k++)
+        {
+            string+= "*";
+        }
+        console.log(string);
+        arr.push(string);
+
+    }
+
+   for (let i in arr)
+   {
+        let pyriamid_section = document.getElementById("pyriamid");
+      line = document.createElement("p");
+      let stars = document.createTextNode(arr[i]);
+      line.appendChild(stars);
+      pyriamid_section.appendChild(line);
+   }
     
 
 }

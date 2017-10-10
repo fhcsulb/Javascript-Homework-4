@@ -14,10 +14,20 @@
             <h1 id="top">Felix Huang Homework 4</h1>
             <p id="validity"></p>
             <p id="million"></p>
+            <div id="pyriamid">
+
+
+            </div>
             <script>
                     let input = enterNumber();
-                    validateNumber(input);
-                    DivideMillionCount(input);
+                    if (validateNumber(input))
+                    {
+                        DivideMillionCount(input);
+                        let pyriamid = displayPyriamid(input);
+
+                    }
+                   
+                    
             </script>
     
         </div>
