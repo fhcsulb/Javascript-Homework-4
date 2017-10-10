@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    flex-flow:  row wrap;
+    margin-left: 2%;
+    width: 100%;
+}
+
+body{
+    margin: auto;
+}
+
+h1#top{
+    width: 100%;
+    float:left;
+    
+}
+
+p#validity , p#million{
+    font-weight: bold;
+    width: 100%;
+}
