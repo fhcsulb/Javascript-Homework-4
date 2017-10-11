@@ -8,17 +8,17 @@ function enterNumber(){
 function validateNumber(input){
     if(input <=1 || input>=11)
     {
-        console.log(false)
+       
         document.getElementById("validity").innerHTML = `Your input ${input} was not valid. The valid input number is between 2 and 10. Please reload this page and try again`;
         document.getElementById("validity").style.color = "red";
-        return Boolean(false);
+       return false;
     }
 
     else
     {
-        console.log(true);
-        document.getElementById("validity").innerHTML = `The value ${input} you typed was valid`;
-        return Boolean(true);
+       
+        document.getElementById("validity").innerHTML = `Your input number was ${input}`;
+        return true;
     }
 }
 

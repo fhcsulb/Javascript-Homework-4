@@ -15,7 +15,7 @@ h1#top{
     
 }
 
-p#validity , p#million{
+h2#validity, p#million{
     font-weight: bold;
     width: 100%;
 }
